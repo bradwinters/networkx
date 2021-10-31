@@ -12,6 +12,10 @@ G.add_edge('E','A', weight=1, relation='enemy')
 G.add_edge('F','B', weight=13, relation='family')
 G.edges(data=True)
 
+print("try to print the newtwork so far")
 print(G)
+# display what class g can do
+# print(help(G))
+
 print(" bye ")
 
