@@ -16,6 +16,7 @@ print("try to print the newtwork so far")
 print(G)
 # display what class g can do
 # print(help(G))
-
+for key in G:
+    print("key : {} , Value : {}".format(key,G[key]))
 print(" bye ")
 
