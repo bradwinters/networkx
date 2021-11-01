@@ -10,20 +10,18 @@ G= nx.Graph()
 
 #add nodes
 G.add_node(0)
-G.add_nodes_from( [1,2,3]}
+G.add_nodes_from( [1,2,3])
 
 
 #add edges
-G.add_edge('A','B', weight=13, relation='freind')
-G.add_edge('B','C', weight=9, relation='family')
+G.add_edge(0,1)
+G.add_edges_from( [ (1,2), (2,3), (3,1) ] )
 
 print(" Number of nodes=", G.number_of_nodes())
 print(" Number of edges=", G.number_of_edges())
 
 
-
-
-#for key in G:
-#    print("key : {} , Value : {}".format(key,G[key]))
+for key in G:
+    print("key : {} , Value : {}".format(key,G[key]))
 print(" bye ")
 
